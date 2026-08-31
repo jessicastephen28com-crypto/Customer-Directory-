@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Customer Directory</h1>
+
+    <input type="text" id="searchInput" placeholder="Search customer">
+
+    <select id="statusFilter">
+        <option value="all">All Customers</option>
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+    </select>
+
+    <div id="customerList"></div>
+
+    <div id="customerDetails"></div>
+
+    <h2>Add a New Customer</h2>
+
+    <form id="customerForm">
+        <input type="text" id="name" placeholder="Customer Name" required>
+
+        <input type="email" id="email" placeholder="Customer Email" required>
+
+        <input type="text" id="phone" placeholder="Phone Number" required>
+
+        <select id="status" required>
+            <option value="">Select Status</option>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+
+        <button type="submit">Add Customer</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
